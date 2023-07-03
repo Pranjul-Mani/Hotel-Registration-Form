@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <div class="container">
+    <h1>Hotel Booking</h1>
+    <form id="booking-form">
+      <label for="customer-name">Customer Name:</label>
+      <input type="text" id="customer-name" required>
+
+      <label for="check-in-date">Check-in Date:</label>
+      <input type="date" id="check-in-date" required>
+
+      <label for="total-days">Total No of Days:</label>
+      <input type="number" id="total-days" required>
+
+      <label for="total-persons">Total No of Persons:</label>
+      <input type="number" id="total-persons" required>
+
+      <h2>Room Information</h2>
+
+      <label for="room-type">Room Type:</label>
+      <select id="room-type">
+        <option value="delux">Delux Room</option>
+        <option value="super">Super Delux Rooom</option>
+        <option value="premium">Premium Room</option>
+        <option value="executive">Executive Room</option>
+      </select>
+
+      <h2>Amenities</h2>
+
+      <label for="amenities">Amenities:</label>
+      <select id="amenities">
+        <option value="paid Pickup">Paid Pickup/Drop</option>
+        <option value="ac">AC</option>
+        <option value="Free Parking">Free Parking</option>
+        <option value="Free Wifi">Free Wifi</option>
+      </select>
+
+      <h2>Advance Payment</h2>
+
+      <label for="advance-amount">Advance Amount:</label>
+      <input type="number" id="advance-amount" required>
+
+      <h2>Total Cost Calculation</h2>
+
+      <label for="total-room-cost">Total Room Cost:</label>
+      <input type="text" id="total-room-cost" readonly>
+
+      <label for="total-amenities-cost">Total Amenities Cost:</label>
+      <input type="text" id="total-amenities-cost" readonly>
+
+      <label for="total-cost">Total Cost:</label>
+      <input type="text" id="total-cost" readonly>
+
+      <label for="balance">Balance:</label>
+      <input type="text" id="balance" readonly>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+
+
+  <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <h2>Congratulations!</h2>
+      <p>Your Registration is successful.</p>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
